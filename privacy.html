@@ -1,16 +1,12 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Политика конфиденциальности - Revora</title>
+    <title>Privacy Policy / Политика конфиденциальности — Revora</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
 
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
@@ -20,55 +16,67 @@
             min-height: 100vh;
         }
 
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 40px 20px;
-        }
+        .container { max-width: 800px; margin: 0 auto; padding: 40px 20px; }
 
         .card {
             background: white;
             border-radius: 20px;
             padding: 40px;
-            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
         }
 
-        h1 {
-            color: #667eea;
-            margin-bottom: 10px;
-            font-size: 2em;
-        }
-
-        .subtitle {
-            color: #888;
+        .lang-switch {
+            display: flex;
+            gap: 10px;
             margin-bottom: 30px;
-            font-size: 0.9em;
         }
 
-        h2 {
-            color: #333;
-            margin-top: 30px;
-            margin-bottom: 15px;
-            font-size: 1.3em;
-        }
-
-        p,
-        li {
-            margin-bottom: 10px;
-            color: #555;
-        }
-
-        ul {
-            padding-left: 20px;
-        }
-
-        .logo {
-            font-size: 3em;
-            margin-bottom: 20px;
-        }
-
-        a {
+        .lang-btn {
+            padding: 6px 18px;
+            border-radius: 20px;
+            border: 2px solid #667eea;
+            background: white;
             color: #667eea;
+            font-size: 0.9em;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .lang-btn.active {
+            background: #667eea;
+            color: white;
+        }
+
+        .lang-section { display: none; }
+        .lang-section.active { display: block; }
+
+        .logo { font-size: 3em; margin-bottom: 20px; }
+
+        h1 { color: #667eea; margin-bottom: 10px; font-size: 2em; }
+
+        .subtitle { color: #888; margin-bottom: 30px; font-size: 0.9em; }
+
+        h2 { color: #333; margin-top: 30px; margin-bottom: 15px; font-size: 1.3em; }
+
+        .ai-box {
+            background: #f0f4ff;
+            border-left: 4px solid #667eea;
+            border-radius: 8px;
+            padding: 16px 20px;
+            margin: 16px 0;
+        }
+
+        p, li { margin-bottom: 10px; color: #555; }
+
+        ul { padding-left: 20px; }
+
+        a { color: #667eea; }
+
+        .divider {
+            border: none;
+            border-top: 2px dashed #ddd;
+            margin: 40px 0;
         }
 
         .footer {
@@ -86,58 +94,159 @@
     <div class="container">
         <div class="card">
             <div class="logo">🧠</div>
-            <h1>Политика конфиденциальности</h1>
-            <p class="subtitle">Revora — Ваш умный нутрициолог</p>
 
-            <h2>1. Какие данные мы собираем</h2>
-            <ul>
-                <li>Информация профиля: возраст, вес, рост, цели питания</li>
-                <li>Данные о питании: записи о еде, калориях, БЖУ</li>
-                <li>Фотографии еды (только по вашему разрешению)</li>
-                <li>Голосовые сообщения (только для распознавания продуктов)</li>
-                <li>Данные авторизации (email, Apple ID)</li>
-            </ul>
-
-            <h2>2. Как мы используем данные</h2>
-            <ul>
-                <li>Персонализация рекомендаций по питанию</li>
-                <li>Расчёт калорий и нутриентов</li>
-                <li>Отслеживание прогресса</li>
-                <li>Улучшение качества AI-распознавания</li>
-            </ul>
-
-            <h2>3. Хранение данных</h2>
-            <p>Ваши данные хранятся в защищённой базе данных Supabase с шифрованием.
-                Фотографии обрабатываются через API OpenAI и не сохраняются на серверах после обработки.</p>
-
-            <h2>4. Передача третьим лицам</h2>
-            <p>Мы не продаём ваши данные. Данные могут передаваться:</p>
-            <ul>
-                <li>OpenAI — для анализа фото и текста</li>
-                <li>Supabase — для хранения данных</li>
-                <li>RevenueCat — для обработки подписок</li>
-            </ul>
-
-            <h2>5. Ваши права</h2>
-            <p>Вы можете:</p>
-            <ul>
-                <li>Запросить копию своих данных</li>
-                <li>Удалить аккаунт и все данные</li>
-                <li>Отозвать согласие на обработку</li>
-            </ul>
-            <p>Для этого напишите нам на: <a href="mailto:ditkulov@gmail.com">ditkulov@gmail.com</a> или в Telegram: <a
-                    href="https://t.me/dannya31">@dannya31</a></p>
-
-            <h2>6. Контакты</h2>
-            <p>Email: <a href="mailto:ditkulov@gmail.com">ditkulov@gmail.com</a></p>
-            <p>Telegram: <a href="https://t.me/dannya31">@dannya31</a></p>
-
-            <div class="footer">
-                <p>Последнее обновление: Январь 2026</p>
-                <p><a href="terms.html">Условия использования</a></p>
+            <div class="lang-switch">
+                <button class="lang-btn active" onclick="switchLang('en')">English</button>
+                <button class="lang-btn" onclick="switchLang('ru')">Русский</button>
             </div>
+
+            <!-- ───────────── ENGLISH ───────────── -->
+            <div class="lang-section active" id="lang-en">
+                <h1>Privacy Policy</h1>
+                <p class="subtitle">Revora — Your AI Nutrition Coach</p>
+
+                <h2>1. Data We Collect</h2>
+                <ul>
+                    <li>Profile information: age, sex, weight, height, activity level, nutrition goals</li>
+                    <li>Nutrition data: food diary entries, calories, macros, micronutrients</li>
+                    <li>Chat messages sent to the AI nutritionist</li>
+                    <li>Food photos (only with your permission)</li>
+                    <li>Voice messages (for food recognition only)</li>
+                    <li>Health conditions and dietary restrictions (if provided)</li>
+                    <li>Authentication data (email, Apple ID)</li>
+                </ul>
+
+                <h2>2. How We Use Your Data</h2>
+                <ul>
+                    <li>Personalizing nutrition recommendations</li>
+                    <li>Calculating calories and nutrients via AI</li>
+                    <li>Tracking progress and nutrition analytics</li>
+                    <li>Powering the AI chat assistant</li>
+                </ul>
+
+                <h2>3. Third-Party AI Services</h2>
+                <div class="ai-box">
+                    <p>Revora uses <strong>OpenAI</strong> (routed via <strong>OpenRouter</strong>) to analyze nutrition data and power the AI assistant. The following personal data is transmitted to OpenAI's servers:</p>
+                    <ul>
+                        <li>Chat messages and food photos</li>
+                        <li>Food diary entries</li>
+                        <li>User profile: age, sex, weight, height, activity level</li>
+                        <li>Goals and health conditions</li>
+                    </ul>
+                    <p style="margin-top:10px;"><strong>Data is only transmitted after explicit user consent.</strong> OpenAI processes this data under their <a href="https://openai.com/privacy" target="_blank">Privacy Policy</a>. Your data is not used to train AI models.</p>
+                    <p>You can withdraw consent at any time in the app under <strong>Profile → AI Features</strong>.</p>
+                </div>
+
+                <h2>4. Data Storage</h2>
+                <p>Your data is stored in <strong>Supabase</strong>'s encrypted database. Photos and messages are sent to OpenAI for processing and are not retained on OpenAI servers after a response is returned.</p>
+
+                <h2>5. Third-Party Data Sharing</h2>
+                <p>We do not sell your data. Data may be shared with the following third parties solely to operate the app:</p>
+                <ul>
+                    <li><strong>OpenAI</strong> (via OpenRouter) — AI nutrition analysis and chat. <a href="https://openai.com/privacy" target="_blank">OpenAI Privacy Policy</a></li>
+                    <li><strong>OpenRouter</strong> — AI request routing. <a href="https://openrouter.ai/privacy" target="_blank">OpenRouter Privacy Policy</a></li>
+                    <li><strong>Supabase</strong> — data storage. <a href="https://supabase.com/privacy" target="_blank">Supabase Privacy Policy</a></li>
+                    <li><strong>RevenueCat</strong> — subscription management. <a href="https://www.revenuecat.com/privacy" target="_blank">RevenueCat Privacy Policy</a></li>
+                </ul>
+
+                <h2>6. Your Rights</h2>
+                <p>You may:</p>
+                <ul>
+                    <li>Request a copy of your data</li>
+                    <li>Delete your account and all associated data</li>
+                    <li>Withdraw consent for AI data processing at any time</li>
+                </ul>
+                <p>To exercise these rights, contact us at: <a href="mailto:ditkulov@gmail.com">ditkulov@gmail.com</a> or Telegram: <a href="https://t.me/dannya31">@dannya31</a></p>
+
+                <h2>7. Contact</h2>
+                <p>Email: <a href="mailto:ditkulov@gmail.com">ditkulov@gmail.com</a></p>
+                <p>Telegram: <a href="https://t.me/dannya31">@dannya31</a></p>
+
+                <div class="footer">
+                    <p>Last updated: May 2026</p>
+                    <p><a href="terms.html">Terms of Use</a></p>
+                </div>
+            </div>
+
+            <!-- ───────────── RUSSIAN ───────────── -->
+            <div class="lang-section" id="lang-ru">
+                <h1>Политика конфиденциальности</h1>
+                <p class="subtitle">Revora — Ваш умный нутрициолог</p>
+
+                <h2>1. Какие данные мы собираем</h2>
+                <ul>
+                    <li>Информация профиля: возраст, пол, вес, рост, уровень активности, цели питания</li>
+                    <li>Данные о питании: записи о еде, калориях, БЖУ, микронутриентах</li>
+                    <li>Сообщения в чате с ИИ-нутрициологом</li>
+                    <li>Фотографии еды (только по вашему разрешению)</li>
+                    <li>Голосовые сообщения (только для распознавания продуктов)</li>
+                    <li>Состояние здоровья и пищевые ограничения (если указаны)</li>
+                    <li>Данные авторизации (email, Apple ID)</li>
+                </ul>
+
+                <h2>2. Как мы используем данные</h2>
+                <ul>
+                    <li>Персонализация рекомендаций по питанию</li>
+                    <li>Расчёт калорий и нутриентов с помощью ИИ</li>
+                    <li>Отслеживание прогресса и аналитика питания</li>
+                    <li>Обеспечение работы ИИ-ассистента в чате</li>
+                </ul>
+
+                <h2>3. Использование сторонних ИИ-сервисов</h2>
+                <div class="ai-box">
+                    <p>Revora использует сервис <strong>OpenAI</strong> (через посредника <strong>OpenRouter</strong>) для анализа питания и работы ИИ-ассистента. На серверы OpenAI передаются следующие данные:</p>
+                    <ul>
+                        <li>Сообщения чата и фотографии еды</li>
+                        <li>Записи дневника питания</li>
+                        <li>Профиль пользователя: возраст, пол, вес, рост, уровень активности</li>
+                        <li>Цели и состояние здоровья</li>
+                    </ul>
+                    <p style="margin-top:10px;"><strong>Передача данных происходит только после явного согласия пользователя.</strong> OpenAI обрабатывает эти данные согласно своей <a href="https://openai.com/privacy" target="_blank">политике конфиденциальности</a>. Данные не используются для обучения ИИ-моделей.</p>
+                    <p>Вы можете отозвать согласие в любое время через раздел <strong>«Я» → «Функции ИИ»</strong> в приложении.</p>
+                </div>
+
+                <h2>4. Хранение данных</h2>
+                <p>Ваши данные хранятся в защищённой базе данных <strong>Supabase</strong> с шифрованием. Фотографии и сообщения передаются в OpenAI для обработки и не сохраняются на серверах OpenAI после получения ответа.</p>
+
+                <h2>5. Передача третьим лицам</h2>
+                <p>Мы не продаём ваши данные. Данные могут передаваться следующим третьим сторонам исключительно для обеспечения работы приложения:</p>
+                <ul>
+                    <li><strong>OpenAI</strong> (через OpenRouter) — анализ питания и работа ИИ-ассистента. <a href="https://openai.com/privacy" target="_blank">Политика конфиденциальности OpenAI</a></li>
+                    <li><strong>OpenRouter</strong> — маршрутизация запросов к ИИ. <a href="https://openrouter.ai/privacy" target="_blank">Политика конфиденциальности OpenRouter</a></li>
+                    <li><strong>Supabase</strong> — хранение данных. <a href="https://supabase.com/privacy" target="_blank">Политика конфиденциальности Supabase</a></li>
+                    <li><strong>RevenueCat</strong> — обработка подписок. <a href="https://www.revenuecat.com/privacy" target="_blank">Политика конфиденциальности RevenueCat</a></li>
+                </ul>
+
+                <h2>6. Ваши права</h2>
+                <p>Вы можете:</p>
+                <ul>
+                    <li>Запросить копию своих данных</li>
+                    <li>Удалить аккаунт и все данные</li>
+                    <li>Отозвать согласие на передачу данных ИИ-сервисам</li>
+                </ul>
+                <p>Для этого напишите нам на: <a href="mailto:ditkulov@gmail.com">ditkulov@gmail.com</a> или в Telegram: <a href="https://t.me/dannya31">@dannya31</a></p>
+
+                <h2>7. Контакты</h2>
+                <p>Email: <a href="mailto:ditkulov@gmail.com">ditkulov@gmail.com</a></p>
+                <p>Telegram: <a href="https://t.me/dannya31">@dannya31</a></p>
+
+                <div class="footer">
+                    <p>Последнее обновление: Май 2026</p>
+                    <p><a href="terms.html">Условия использования</a></p>
+                </div>
+            </div>
+
         </div>
     </div>
+
+    <script>
+        function switchLang(lang) {
+            document.querySelectorAll('.lang-section').forEach(el => el.classList.remove('active'));
+            document.querySelectorAll('.lang-btn').forEach(el => el.classList.remove('active'));
+            document.getElementById('lang-' + lang).classList.add('active');
+            event.target.classList.add('active');
+        }
+    </script>
 </body>
 
 </html>
